@@ -5,7 +5,7 @@ pipeline {
     stage('Checkout') {
       agent any
       steps {
-        git branch: 'main', url: 'https://github.com/c1t1d0s7/test-maven-java-spring-hello-webapp'
+        git branch: 'main', url: 'https://github.com/alivejun1215/source-maven-java-spring-hello-webapp'
       }
     }
     stage('Build') {
