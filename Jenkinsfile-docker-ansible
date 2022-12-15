@@ -48,8 +48,8 @@ pipeline {
   stage('Run Docker Container') {
    agent {
     docker {
-     image '<DOCKER_HUB_USERNAME>/jenkins-ansible'
-     args '-u 0:0 -e DOCKER_HOST=tcp://<DOCKER_PRIVATE_IP>:2375'
+     image 'alivejun1215/jenkins-ansible'
+     args '-u 0:0 -e DOCKER_HOST=tcp://43.201.65.203:2375'
     }
    }
    steps {
